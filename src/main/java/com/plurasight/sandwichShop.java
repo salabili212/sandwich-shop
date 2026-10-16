@@ -1,4 +1,34 @@
 package com.plurasight;
+import java.util.Scanner;
 
 public class sandwichShop {
+    public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("### Welcome to Sandwich Shop ###\n");
+        String sandwichSize = """
+                Please 1 or 2 as an integer to choose one of the Sandwich.
+                1-Regular: base price $5.45
+                2-Large: base price $8.95
+                """;
+
+        double sandwichPrice1 = 5.45;
+        double sandwichPrice2 = 8.95;
+        System.out.println(sandwichSize);
+        int sandwichNumber = myScanner.nextInt();
+
+        System.out.println("If you are Student OR 65 years old or older please enter your age\n");
+        int CustomerAge = myScanner.nextInt();
+
+        if(CustomerAge <= 17){
+            if(sandwichNumber == 1 ){
+                System.out.println("The price for the Regular Sandwich is: $"+(sandwichPrice1-(sandwichPrice1*.10)));
+            } else if (sandwichNumber == 2) {
+                System.out.println("The price for the Large Sandwich is: $"+(sandwichPrice2-(sandwichPrice2*.10)));
+            };
+        } else if () {
+            
+        }
+
+
+    }
 }
