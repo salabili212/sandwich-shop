@@ -59,7 +59,7 @@ public class sandwichShop {
             //applying the discount for students
             if(sandwichNumber == 1 ){
                 System.out.printf("The orignal price is: $%.2f\nDiscount is: $%.2f\n",sandwichPrice1, studentDiscount1);
-                System.out.printf("The total price: $",(sandwichPrice1-studentDiscount1));
+                System.out.printf("The total price: $%.2f",(sandwichPrice1-studentDiscount1));
             } else if (sandwichNumber == 2) {
                 System.out.printf("The orignal price is: $%.2f\nDiscount is: %.2f\n",sandwichPrice2, studentDiscount2);
                 System.out.printf("The total price: $%.2f",(sandwichPrice2-studentDiscount2));
