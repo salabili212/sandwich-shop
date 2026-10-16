@@ -16,17 +16,33 @@ public class sandwichShop {
         System.out.println(sandwichSize);
         int sandwichNumber = myScanner.nextInt();
 
-        System.out.println("If you are Student OR 65 years old or older please enter your age\n");
+        System.out.println("If you are Student OR 65 years old or older please enter your age if not enter 0 \n");
         int CustomerAge = myScanner.nextInt();
 
         if(CustomerAge <= 17){
             if(sandwichNumber == 1 ){
+                System.out.println("The orignal price is: $"+sandwichPrice1+"\nDiscount is: $%.2f"+(sandwichPrice1-(sandwichPrice1-(sandwichPrice1*.10))));
                 System.out.println("The price for the Regular Sandwich is: $"+(sandwichPrice1-(sandwichPrice1*.10)));
             } else if (sandwichNumber == 2) {
+                System.out.println("The orignal price is: $"+sandwichPrice2+"\nDiscount is: $%.2f"+(sandwichPrice2-(sandwichPrice2-(sandwichPrice2*.10))));
                 System.out.println("The price for the Large Sandwich is: $"+(sandwichPrice2-(sandwichPrice2*.10)));
             };
-        } else if () {
+        } else if (CustomerAge >= 65) {
+            if(sandwichNumber == 1 ){
+                System.out.println("The orignal price is: $"+sandwichPrice1+"\nDiscount is: $%.2f"+(sandwichPrice1-(sandwichPrice1-(sandwichPrice1*.20))));
+                System.out.println("The price for the Regular Sandwich is: $"+(sandwichPrice1-(sandwichPrice1*.20)));
+            } else if (sandwichNumber == 2) {
+                System.out.println("The orignal price is: $"+sandwichPrice2+"\nDiscount is: $%.2f"+(sandwichPrice2-(sandwichPrice2-(sandwichPrice2*.20))));
+                System.out.println("The price for the Large Sandwich is: $"+(sandwichPrice2-(sandwichPrice2*.20)));
+            };
             
+        }else {
+            //This the orginal price without any discount
+            if(sandwichNumber == 1 ){
+                System.out.println("The price for the Regular Sandwich is: $"+sandwichPrice1);
+            } else if (sandwichNumber == 2) {
+                System.out.println("The price for the Large Sandwich is: $"+sandwichPrice2);
+            };
         }
 
 
